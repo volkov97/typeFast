@@ -1,0 +1,65 @@
+<div class="page-wrap">
+	<header class="page-header">
+		<div class="logo-wrap">
+			<h1 class="logo-wrap__logo"><span class="ltr">w</span><span class="ltr">r</span><span class="ltr">i</span><span class="ltr">t</span><span class="ltr">e</span><span class="ltr">F</span><span class="ltr">a</span><span class="ltr">s</span><span class="ltr">t</span></h1>
+		</div>
+	</header>
+	<main class="page-main">
+		<div class="game-modes animated">
+			<a href="#" class='game-modes__random-game'>Random<br>Game</a>
+			<a href="#" class='game-modes__pair-game'>Pair<br>Game</a>
+		</div>
+		<div class="pair-game-modes animated unvisible">
+			<div class="pair-game-modes__create-mode">
+				<a href="#" class='pair-game-modes__create animated'>Create room</a>
+				<div class="pair-game-modes__create_roomCode animated unvisible"></div>
+			</div>
+			<div class="pair-game-modes__join-mode animated">
+				<form action="">
+					<label for="pair-game-modes__join">...or enter code:</label>
+					<input class="pair-game-modes__join-roomCode" id="pair-game-modes__join" type="text" size="5">
+					<a href="#" class="pair-game-modes__join-roomCode_enter">enter</a>
+				</form>
+			</div>
+		</div>
+		<div class="game-area__players-av animated unvisible"><img src="images/svg-loaders/oval.svg" /><br>searching for opponents...</div>
+		<div class="game-area animated unvisible">
+			<div class="game-area__sentence animated"></div>
+			<div class="game-area__user-sentence-wrap">
+				<input class="game-area__user-sentence" type="text">
+			</div>
+			<div class="game-area__users">
+				<div class="game-area__user you">
+					<span class="game-area__user-name">You</span><br>
+					<span class="game-area__user-points">0</span>
+				</div>
+				<div class="game-area__user op">
+					<span class="game-area__user-name">Opponent</span><br>
+					<span class="game-area__user-points">0</span>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="page-footer">
+		<div class="logo-wrap clearfix">
+			<div class="logo-wrap__descr">
+				Welcome to "writeFast"!<br>Choose mode you like, wait for an opponent and start playing!<br>Write sentences as fast as you can and get points!<br>Also follow me here: 
+			</div>
+		</div>
+		<div class="social-game">
+			<ul class="social-game__menu">
+				<li class="social-game__menu-item"><a href="http://vk.com/id56579569"><i class="fa fa-vk fa-2x"></i></a></li>
+				<li class="social-game__menu-item"><a href="https://www.facebook.com/profile.php?id=100008888207030"><i class="fa fa-facebook fa-2x"></i></a></li>
+				<li class="social-game__menu-item"><a href="https://twitter.com/GVolkov97"><i class="fa fa-twitter fa-2x"></i></a></li>
+			</ul>
+		</div>
+	</footer>
+	<div class="popup-msg-wrap unvisible">
+		<div class="popup-msg">
+			<div class="popup-msg-inner">
+				<div class="popup-msg__header">message...</div>
+				<div class="popup-msg__text"></div>
+			</div>
+		</div>
+	</div>
+</div>
