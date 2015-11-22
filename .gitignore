@@ -9,6 +9,8 @@
 *.pdf
 *.xls
 *.rar
+*.sublime-project
+*.sublime-workspace
 # Игнорирование файла во ВСЕХ директориях
 # Например /params/db/config.php, /config.php
 config.php
@@ -23,7 +25,7 @@ config.php
 # Игнорирование всех файлов и папок ТОЛЬКО в конкретной директории(включая поддиректории и файлы в них)
 # Например /images/user.jpg, /images/company/logo.png
 # НЕ БУДУТ проигнорированы файлы и папки /prod/images/user.jpg
-/bower_components/*
+*/bower_components/*
 /node_modules/*
 /_assets/*
 # Игнорирование всех файлов и папок в ЛЮБЫХ директориях с указанным именем

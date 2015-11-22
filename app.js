@@ -14,21 +14,25 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+// uncomment after placing your favicon in /dist
+//app.use(favicon(path.join(__dirname, 'dist', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+/*
+
 app.use(require('node-sass-middleware')({
   src: path.join(__dirname, '/scss/'),
-  dest: path.join(__dirname, '/public/stylesheets/'),
+  dest: path.join(__dirname, '/dist/stylesheets/'),
 //  indentedSyntax: true,
 //  sourceMap: true,
   debug: true,
   prefix: '/stylesheets'
 }));
-app.use(express.static(path.join(__dirname, 'public')));
+
+*/
+app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use('/', routes);
 app.use('/users', users);

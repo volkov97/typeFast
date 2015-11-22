@@ -95,6 +95,13 @@ $(document).ready(function() {
 
 	var rightSentence = '', keyPressed = 1;
 
+	$('.game-area__user-sentence').bind("cut copy paste", function(e) {
+      	e.preventDefault();
+ 	});
+ 	$('.game-area__user-sentence').bind("contextmenu",function(e){ 
+ 		e.preventDefault(); 
+ 	});
+
 	socket.on("show new sentence result", function(text) {
 		$('.game-area__user-sentence').val('');
 		
@@ -117,17 +124,16 @@ $(document).ready(function() {
 	$('.game-area__user-sentence').keydown(function(event) {
 		var code = event.keyCode || event.which;
 
-		if (code == 32 || (code > 47 && code < 91) ){
-		 	keyPressed++;
+		keyPressed++;
+		if (code == 8){
+			keyPressed--;
 		}
-		else if (code == 8){
-			return true;
-		}
-		else return false;
+		else return true;
 	});
 
 	$('.game-area__user-sentence').keyup(function(event) {
 		event.preventDefault();
+		var code = event.keyCode || event.which;
 		
 		userSentence = $('.game-area__user-sentence').val();
 

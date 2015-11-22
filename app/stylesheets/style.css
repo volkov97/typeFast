@@ -22,6 +22,8 @@ body {
   color: #189818; }
 
 .button, .page-main .game-modes a, .page-main .pair-game-modes__create, .page-main .pair-game-modes__join-roomCode_enter, .page-main .game-area__user {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
   padding-top: 45px;
@@ -29,6 +31,7 @@ body {
   height: 180px;
   line-height: 1.2em;
   overflow: hidden;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   border: 1px solid grey;
   background: #D1D1D1;
@@ -36,6 +39,9 @@ body {
   text-decoration: none;
   color: #756CA6;
   text-align: center;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s; }
   .button:hover, .page-main .game-modes a:hover, .page-main .pair-game-modes__create:hover, .page-main .pair-game-modes__join-roomCode_enter:hover, .page-main .game-area__user:hover {
     color: #D1D1D1;
@@ -44,15 +50,18 @@ body {
 input {
   display: inline-block;
   vertical-align: top;
-  background: url("../images/bg_input.png") 50% 50%;
+  background: url("../img/bg_input.png") 50% 50%;
   border: 1px solid grey;
+  -webkit-border-radius: 8px;
   border-radius: 8px;
   outline: none;
   padding: 5px 10px;
   color: #565656; }
   input:hover {
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); }
   input:focus {
+    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3); }
 
 /*********************** Общие элементы ***********************/
@@ -72,11 +81,15 @@ input {
     margin-left: 20px;
     width: 60px;
     height: 60px;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
     border: 1px solid grey;
     background-color: #DDDBDB;
     font-size: 0.75em;
     line-height: 75px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     cursor: pointer; }
     .social-game__menu-item:first-child {
@@ -108,8 +121,8 @@ input {
   /* Chrome10+,Safari5.1+ */
   background: -o-linear-gradient(left, rgba(30, 87, 153, 0) 0%, #a0a0a0 50%, rgba(125, 185, 232, 0) 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, rgba(30, 87, 153, 0) 0%, #a0a0a0 50%, rgba(125, 185, 232, 0) 100%);
   /* IE10+ */
+  background: -webkit-gradient(linear, left top, right top, from(rgba(30, 87, 153, 0)), color-stop(50%, #a0a0a0), to(rgba(125, 185, 232, 0)));
   background: linear-gradient(to right, rgba(30, 87, 153, 0) 0%, #a0a0a0 50%, rgba(125, 185, 232, 0) 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#007db9e8',GradientType=1 );
@@ -123,6 +136,9 @@ input {
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s; }
     .page-header .logo-wrap__logo .ltr:nth-child(2n) {
       color: #8B89AE; }
@@ -131,6 +147,10 @@ input {
     .page-header .logo-wrap__logo .ltr:first-child {
       padding-left: 0px; }
     .page-header .logo-wrap__logo .ltr:hover {
+      -webkit-transform: translateY(-15px);
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -o-transform: translateY(-15px);
       transform: translateY(-15px); }
 
 .page-main .game-modes {
@@ -157,6 +177,7 @@ input {
   height: 45px;
   line-height: 1em;
   width: auto;
+  -webkit-border-radius: 8px;
   border-radius: 8px; }
 
 .page-main .game-area__sentence {
@@ -183,7 +204,7 @@ input {
     margin-bottom: 20px;
     height: 50px;
     width: 50%;
-    background: url("../images/devider.png") 50% 50% no-repeat; }
+    background: url("../img/devider.png") 50% 50% no-repeat; }
 
 .page-main .game-area__players-av {
   min-height: 35px;
@@ -243,8 +264,8 @@ input {
     /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(left, rgba(30, 87, 153, 0) 0%, #a0a0a0 50%, rgba(125, 185, 232, 0) 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(30, 87, 153, 0) 0%, #a0a0a0 50%, rgba(125, 185, 232, 0) 100%);
     /* IE10+ */
+    background: -webkit-gradient(linear, left top, right top, from(rgba(30, 87, 153, 0)), color-stop(50%, #a0a0a0), to(rgba(125, 185, 232, 0)));
     background: linear-gradient(to right, rgba(30, 87, 153, 0) 0%, #a0a0a0 50%, rgba(125, 185, 232, 0) 100%);
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#007db9e8',GradientType=1 );
